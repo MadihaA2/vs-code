@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>css</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+           input[type="text"]{
+            border:5px solid red;
+            border-radius: 10px;
+            width: 200px;
+            height: 30px;
+               }
+               
+               input[type="password"]{
+                border: 5px solid black;
+                border-radius: 10px
+                width: 200px;
+                height: 30px;
+               }
+               ul > li{
+                color: green;
+                font-size: 30px;
+               }
+               p+h1{
+                color: blue;
+                font-size: 30px;
+               }
+               a:hover{
+                color: black;
+                font-size: 30px;
+
+               }
+               ul  li:nth-child(5){
+                color: green;
+                font-size: 30 px;
+                }
+                .main:before{
+                    content:"hello world";
+                    color: blue;
+                    font-size: 30px;
+                    background-color: red;
+                    height: 400px;
+                    width: 300px;
+                }
+               div:not(.main){
+                    color: orange;
+                    font-size: 30px;
+                    background-color: yellow;
+                    height: 300px;
+                    width: 200px;
+                }
+               .ab{
+                background-color: greenyellow;
+               }
+                
+                p::first-letter{
+                    color: red;
+                    background-color: yellow;
+                    font-size: 50px;
+                }
+               
+
+               
+        </style>
+
+    </head>
+    <body>
+        <form>
+            <label>enter your name</label>
+            <input type="text" name="name"
+            placeholder="enter your name"> <br>
+
+            <label>enter your password</label>
+            <input type="password" name="password"
+            placeholder="enter your password">
+
+        </form>
+        <h1> child selector</h1>
+        <ul>
+            <li>Apple</li>
+            <li>mango</li>
+            <li>banana</li>
+            <h1>sibling selector</h1>
+            <p>this is a paragraph</p>
+            <h1>this is heading 1 sibling selector</h1>
+            <h1>pesudo selector</h1>
+            <a href="http:// www.google.com">visit google</a>
+            
+                <h1>nth child selector</h1>
+                <ul>
+                <h1>banana</h1>
+                <h2> mango</h2>
+                <h3>orange</h3>
+                <h4>grapes</h4>
+                <h5>Apple</h5>
+                </ul>
+                <h1>this is not selector</h1>
+                <div class="main">this is main div </div>
+                <h1>this is not main </h1>
+                <div class="not main">this is not main div </div
+                    <div class="abc">this is not main </div>
+                    <p>this is first letter class</p>
+    </body>
+</html>
+    
+    
+
+
+   
